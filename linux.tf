@@ -90,7 +90,7 @@ network_security_group_id = azurerm_network_security_group.example.id
 }
  
 resource "azurerm_linux_virtual_machine" "main" {
- name = "${var.prefix}-vm"
+ name = "new-linux-vm"
  resource_group_name = azurerm_resource_group.main.name
  location = azurerm_resource_group.main.location
  size = "Standard_F2"
